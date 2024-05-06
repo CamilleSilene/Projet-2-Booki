@@ -51,40 +51,15 @@ nav a:hover {
     border-top-color: blue;
 }
 
-/* Filtres */
-
-
-.filters {
-    display: flex;
-    flex-direction: row;
-}
-
-.filters-title {
-   align-self: center;
-}
-
-.filter {
-    border: solid 1px;
-    border-color: var(--main-bg-color);
-    border-radius : 10px;
-    margin: 10px;
-    padding: 10px;
-}
-
-.filter:hover {
-    background-color: #DEEBFF;
-    cursor:default;
-    }
-
 /* Barre de recherche */
 
 
 .search-bar {
     display: flex;
-    height: 40px;  
+    height: 40px;
 }
 
-.search-bar .search-input {    
+.search-bar .search-input {
     border: solid 1px;
     border-color: var(--main-bg-color);
 }
@@ -114,9 +89,51 @@ nav a:hover {
 .search-bar .search-bar-text {
     display: block;
 }
+
 .search-bar .search-bar-loupe {
-    display: none; 
+    display: none;
 }
+
+/* Info-barre */
+
+.info-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.info-bar-text{
+    margin-left: 5px;
+}
+
+
+/* Filtres */
+
+
+.filters {
+    display: flex;
+    flex-direction: row;
+}
+
+.filters-title {
+    align-self: center;
+}
+
+.filter {
+    border: solid 1px;
+    border-color: var(--main-bg-color);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.filter:hover {
+    background-color: #DEEBFF;
+    cursor: default;
+}
+
+
 
 /* Section cartes */
 
@@ -166,6 +183,10 @@ nav a:hover {
     width: 65%;
 }
 
+.hebergements-card img {
+    border-top-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
 
 
 /****** Populaires ***********/
@@ -260,8 +281,9 @@ nav a:hover {
     .search-bar .search-bar-text {
         display: none;
     }
+
     .search-bar .search-bar-loupe {
-        display: inline-block; 
+        display: inline-block;
     }
 }
 

@@ -12,6 +12,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -40,7 +41,8 @@
                         <span class="search-bar-icon">
                             <i class="fa fa-location-dot" style="color: #000000;"></i>
                         </span>
-                        <input type="text" class="search-input" name="ville" id="ville" placeholder="Ex : Marseille, France">
+                        <input type="text" class="search-input" name="ville" id="ville"
+                            placeholder="Ex : Marseille, France">
                         <button type="submit" class="search-button">
                             <span class="search-bar-loupe">
                                 <i class="fa fa-magnifying-glass"></i>
@@ -55,12 +57,12 @@
                 <div class="filters">
                     <div class="filters-title">Filtres</div>
                     <div class="filter" id="filters-eco">
-                       <i class="fa-solid fa-money-bill-wave"></i>
+                        <i class="fa-solid fa-money-bill-wave"></i>
                         Économique
                     </div>
                     <div class="filter" id="filters-family">
                         <i class="fa-solid fa-person"></i>
-                        Famille
+                        Familial
                     </div>
                     <div class="filter" id="filters-romantic">
                         <i class="fa-solid fa-heart"></i>
@@ -69,22 +71,22 @@
                     <div class="filter" id="filters-pepites">
                         <i class="fa-solid fa-fire"></i>
                         Nos pépites
-                    </div>      
-                    
-                    
-                    <div>
-                        <i class="fa-solid fa-info" style="color : var(--main-color)"></i>
-                        <i class="fa-light fa-circle" style="color: var(--main-bg-color);"></i>
-                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                    </div> 
+                    </div>
                 </div>
 
+                <div class="info-bar">
+                    <span class="fa-layers fa-fw">
+                        <i class="fa-solid fa-info" data-fa-transform="shrink-3" style="color : var(--main-color)"></i>
+                        <i class="fa-regular fa-circle" data-fa-transform="grow-6"></i>
+                    </span>
+                    <span class="info-bar-text">Plus de 500 logements sont disponibles dans cette ville</span>
+                </div>
 
             </section>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                     <h2 class="section-title">Hébergements à Marseille</h2>
-                    <div class="hebergements-cards-list">
+                    <div class="hebergements-cards">
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/fred-kleber.jpg"
