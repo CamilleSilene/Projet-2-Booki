@@ -170,6 +170,7 @@ nav a:hover {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .hebergements-and-populaires section {
@@ -254,7 +255,46 @@ nav a:hover {
     margin-bottom: 5px;
 }
 
+/* Activités */
 
+.card-act {
+    border-radius: 20px; 
+    background-color: white;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    
+}
+
+.activities-title {
+    padding-left: 30px;
+}
+
+.container-activities {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+.card-activities  {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+ }
+
+.card-activities img {
+    height: 350px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    
+}
+
+.card-activities .card-content {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
