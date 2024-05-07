@@ -296,6 +296,23 @@ nav a:hover {
     box-sizing: border-box;
 }
 
+/* Footer */
+
+.pied-de-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #F2F2F2 ;
+    margin-top: 50px;
+}
+
+.footer-title {
+    padding-left: 30px;
+}
+
+.footer-li {
+    margin: 10px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
