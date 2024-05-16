@@ -38,23 +38,25 @@ a {
 
 header {
     margin-bottom: 6%;
-    padding-top: 20px;
+    
 }
 
 #Logo-Booki {
-    height: 30px;
-    width: 8%;
+   
+    width: 10%;
 }
 
 nav {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav a {
     margin-left: 30px;
+    display: block;
+    padding-top: 20px;
 
 }
 
@@ -62,7 +64,11 @@ nav a:hover {
     border-bottom: none;
     border-top: solid;
     border-top-color: blue;
-    padding-top: 20px;
+    
+}
+
+.nav-menu {
+    display: flex;
 }
 
 .info-group-lines {
@@ -462,32 +468,29 @@ footer ul li {
     /* en-tete */
 
     #Logo-Booki {
-        display: flex;
-        height: 30px;
-        width: 15%;
+        height: 18px;
+        width: 57px;
         align-self: center;
     }
 
     nav {
         flex-direction: column;
         align-items: normal;
-        ;
     }
 
-      .nav-menu {
+    .nav-menu {
         display: flex;
         justify-content: space-between;
         padding-top: 10px;
-        border-bottom: solid 1px;
-        border-bottom-color:#F2F2F2;
 
     }
 
     nav a:hover {
-        border-bottom: solid;
         border-top: none;
+        border-bottom: solid 1px;
         border-bottom-color: blue;
-        padding-top: 20px;
+        color: #0065FC;
+        
     }
 
     /* barre de recherche */
@@ -501,12 +504,6 @@ footer ul li {
         color: white;
     }
 
-    nav a:hover {
-        border-top: none;
-        border-bottom: solid;
-        border-bottom-color: blue;
-        color: #0065FC;
-    }
 
     /* filtres */
 
