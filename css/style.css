@@ -493,6 +493,10 @@ footer ul li {
         
     }
 
+    nav a {
+        margin-left: 0;
+    }
+
     /* barre de recherche */
 
     .search-bar .search-bar-text {
