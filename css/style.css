@@ -114,10 +114,19 @@ nav a:hover {
 
 .search-bar .search-bar-text {
     display: block;
+    color: white;
 }
 
 .search-bar .search-bar-loupe {
     display: none;
+}
+
+.grey-icone {
+    color: #F2F2F2;"
+}
+
+.black-icone {
+    color: #000000;"
 }
 
 
@@ -195,7 +204,11 @@ nav a:hover {
 }
 
 .neutral-star {
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);
+}
+
+.blue-icone {
+    color: #0065FC;
 }
 
 /****** Hebergements And Populaires ***********/
