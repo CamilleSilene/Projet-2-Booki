@@ -64,6 +64,7 @@ nav a:hover {
     border-bottom: none;
     border-top: solid;
     border-top-color: blue;
+    color:#0065FC;
     
 }
 
@@ -476,14 +477,16 @@ footer ul li {
     .main-container {
         width: 100%;
         box-sizing: border-box;
+        padding: 0;
     }
 
     /* en-tete */
 
     #Logo-Booki {
-        height: 18px;
-        width: 57px;
+        height: 20px;
+        width: 65px;
         align-self: center;
+        padding-top: 15%;
     }
 
     nav {
@@ -495,6 +498,7 @@ footer ul li {
         display: flex;
         justify-content: space-between;
         padding-top: 10px;
+        border-bottom: #0065FC;
 
     }
 
@@ -562,6 +566,7 @@ footer ul li {
         margin-bottom: 5%;
         margin-left: 0%;
         margin-right: 0%;
+        
     }
 
     #hebergements-title {
