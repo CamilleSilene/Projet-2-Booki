@@ -38,16 +38,16 @@ a {
 
 header {
     margin-bottom: 6%;
-    
+
 }
 
 #Logo-Booki {
-   
+
     width: 6%;
     padding-top: 25px;
 }
 
-nav {
+.nav-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -61,15 +61,15 @@ nav a {
 
 }
 
-nav a:hover {
+.nav-menu-link a:hover {
     border-bottom: none;
     border-top: solid;
     border-top-color: blue;
-    color:#0065FC;
-    
+    color: #0065FC;
+
 }
 
-.nav-menu {
+.nav-menu-link {
     display: flex;
 }
 
@@ -328,12 +328,13 @@ nav a:hover {
 .container-activities {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2%;
+    padding: 3%;
 }
 
 .card-activities {
     display: flex;
-    flex-direction: column;
-    margin: 13%;
+    flex-direction: column;    
     border-radius: 20px;
     background-color: white;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -378,26 +379,31 @@ footer ul {
     padding-left: 20px;
 }
 
+.nav-footer a{
+    margin-left: 0px;
+    padding-top: 5px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
-/* général */
+    /* général */
 
     .main-container {
         width: 100%;
         box-sizing: border-box;
     }
 
-/* en-tête */
+    /* en-tête */
 
     #Logo-Booki {
         width: 10%;
     }
 
-    nav a:hover {
+    .nav-menu-link a:hover {
         border-bottom: none;
         border-top: solid;
         border-top-color: blue;
@@ -410,14 +416,14 @@ footer ul {
     }
 
 
-        /* filtres */
-.filters {
-    display: block;
-}
-        
+    /* filtres */
+    .filters {
+        display: block;
+    }
 
-        /* sections */
-    
+
+    /* sections */
+
 
     .hebergements-and-populaires {
         flex-direction: column;
@@ -427,6 +433,8 @@ footer ul {
 
     .section-hebergements {
         width: 100%;
+        
+        ;
     }
 
     .hebergements {
@@ -458,6 +466,12 @@ footer ul {
         font-size: 13px;
     }
 
+    .container-populaires {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2%;
+    }
+
     /* activités */
 
     .card-activities img {
@@ -469,7 +483,7 @@ footer ul {
     .card-activities .card-content {
         height: 70px;
     }
-  
+
 
     .filters-title {
         align-self: flex-start;
@@ -494,32 +508,32 @@ footer ul {
         padding-top: 15%;
     }
 
-    nav {
+    .nav-menu {
         flex-direction: column;
         align-items: normal;
         border-bottom: solid 1px;
         border-bottom-color: #F2F2F2;
     }
 
-    .nav-menu {
+    .nav-menu-link {
         display: flex;
         justify-content: space-around;
         padding-top: 10px;
-        
+
 
     }
 
     .nav-link {
         display: flex;
-        justify-content:center ;
+        justify-content: center;
         width: 50%;
     }
 
-    .nav-menu a:hover {
+    .nav-menu-link a:hover {
         border-top: none;
         color: #0065FC;
-            
-        
+
+
     }
 
     .nav-link:hover {
@@ -569,26 +583,28 @@ footer ul {
         gap: 5px;
     }
 
-   
+
 
     /* section */
 
     .hebergements-and-populaires section {
         width: 100%;
         margin-bottom: 50px;
+        margin-top: 0px;
     }
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
         padding: 0%;
-        
+        margin-bottom: 0%;
+
         /* hebergements */
     }
 
     .section-hebergements {
         width: 100%;
         background-color: white;
-        
+
     }
 
     .container-hebergements {
@@ -600,10 +616,14 @@ footer ul {
         margin-bottom: 5%;
         margin-left: 0%;
         margin-right: 0%;
-        
+
     }
 
     #hebergements-title {
+        margin-left: 0%;
+    }
+
+    #afficher {
         margin-left: 0%;
     }
 
@@ -627,15 +647,17 @@ footer ul {
     .container-activities {
         display: grid;
         grid-template-columns: 1fr;
+        gap: 1px;
     }
 
     .card-activities {
-            margin: 5%;
-          
+        margin: 5%;
+
     }
 
     .activities-title {
         padding-left: 40px;
+        padding-top: 0px;
 
     }
 
@@ -649,7 +671,7 @@ footer ul {
         padding-left: 40px;
     }
 
-   
+
 
     .pied-de-page {
         display: flex;
