@@ -373,6 +373,11 @@ footer ul li {
     margin: 10px;
 }
 
+footer ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -464,17 +469,11 @@ footer ul li {
     .card-activities .card-content {
         height: 70px;
     }
-
-   
-
-    
+  
 
     .filters-title {
         align-self: flex-start;
     }
-
-
-
 
 }
 
@@ -563,6 +562,13 @@ footer ul li {
         grid-template-columns: 1fr 1fr;
     }
 
+    .filter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+
    
 
     /* section */
@@ -640,8 +646,10 @@ footer ul li {
     }
 
     footer ul {
-        list-style-type: none;
+        padding-left: 40px;
     }
+
+   
 
     .pied-de-page {
         display: flex;
