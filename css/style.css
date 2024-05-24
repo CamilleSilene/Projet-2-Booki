@@ -83,7 +83,7 @@ nav a {
 .search-bar .search-input {
     border: solid 1px;
     border-color: var(--main-bg-color);
-    width: 230px;
+    width: 180px;
 }
 
 
@@ -106,7 +106,7 @@ nav a {
     border-bottom-right-radius: 10px;
     border-left: 0;
     border: none;
-    width: 120px;
+    width: 100px;
 }
 
 .search-bar .search-bar-text {
@@ -117,6 +117,7 @@ nav a {
 .search-input::placeholder {
     font-weight: bold;
     color: black;
+    text-align: center ;
 }
 
 .search-bar .search-bar-loupe {
@@ -140,13 +141,14 @@ nav a {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: baseline;
 }
 
 .filters span {
     display: flex;
     font-weight: bold;
     font-size: 15px;
-    align-self: center;    
+    align-self: center;
 
 }
 
@@ -173,7 +175,12 @@ nav a {
 
 .container-filters {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
+}
+
+.filters-title {
+    align-self: center;
+    font-weight: bold;
 }
 
 
@@ -452,7 +459,11 @@ footer ul {
 
     /* filtres */
     .filters {
-        display: block;
+        display: flex;
+    }
+
+    .filters-title {
+        align-self: center;
     }
 
 
@@ -519,10 +530,6 @@ footer ul {
     }
 
 
-    .filters-title {
-        align-self: flex-start;
-    }
-
 }
 
 /* Small devices (phones, less than 768px) */
@@ -586,7 +593,7 @@ footer ul {
     .info-group {
         padding-left: 20px;
         padding-right: 20px;
-    }
+        }
 
     /* barre de recherche */
 
@@ -608,17 +615,19 @@ footer ul {
 
     /* filtres */
 
+    .filters {
+        flex-direction: column;
+    }
+
     .filters-title {
-        align-self: flex-start;
+        align-self: auto;
+        padding-left: 15px;
     }
 
     .container-filters {
-        /*
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        */
         display: flex;
         flex-wrap: wrap;
+        
     }
 
     .filter {
@@ -626,15 +635,19 @@ footer ul {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 5px;
-        width: 33%;        
+        gap: 12px;
+        width: 33%;
         margin-right: 1%;
+        padding: 10px;
+        flex-grow: 1;
 
     }
 
     .filter span {
         font-size: 11px;
     }
+
+
 
 
 
@@ -646,7 +659,7 @@ footer ul {
         margin-top: 0px;
         padding-left: 15px;
         padding-right: 15px;
-        
+
     }
 
     .hebergements-and-populaires {
