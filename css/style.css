@@ -37,7 +37,7 @@ a {
 /* En-tête */
 
 header {
-    margin-bottom: 6%;
+    margin-bottom: 5%;
 
 }
 
@@ -117,7 +117,7 @@ nav a {
 .search-input::placeholder {
     font-weight: bold;
     color: black;
-    text-align: center ;
+    text-align: center;
 }
 
 .search-bar .search-bar-loupe {
@@ -175,7 +175,7 @@ nav a {
 
 .container-filters {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
 }
 
 .filters-title {
@@ -202,6 +202,19 @@ nav a {
 .info-group-lines {
     margin-bottom: 30px;
     margin-top: 20px;
+}
+
+.info-group-lines p {
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+.info-group-lines h1 {
+    margin-bottom: 5px;
+}
+
+.info-group-filters {
+    padding-top: 20px;
 }
 
 
@@ -250,7 +263,10 @@ nav a {
 
 .hebergements-and-populaires section {
     border-radius: 20px;
-    padding: 30px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
     box-sizing: border-box;
 }
 
@@ -370,7 +386,7 @@ nav a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2%;
-    padding: 3%;
+    padding: 2%;
 }
 
 .card-activities {
@@ -591,9 +607,19 @@ footer ul {
     /* info group */
 
     .info-group {
-        padding-left: 20px;
-        padding-right: 20px;
-        }
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .info-bar {
+        padding-left: 18px;
+    }
+
+    .fa-info {
+        padding-left: 5px;
+    }
+
+    
 
     /* barre de recherche */
 
@@ -607,10 +633,16 @@ footer ul {
     }
 
     .search-bar .search-button {
-        width: 50px;
+        width: 40px;
         border-radius: 10px;
         filter: drop-shadow(1px 6px 1px rgba(0, 0, 0, 0.1))
     }
+
+    .search-bar .search-bar-icon {
+        width: 50px;
+    }
+
+    
 
 
     /* filtres */
@@ -627,7 +659,7 @@ footer ul {
     .container-filters {
         display: flex;
         flex-wrap: wrap;
-        
+
     }
 
     .filter {
@@ -659,6 +691,8 @@ footer ul {
         margin-top: 0px;
         padding-left: 15px;
         padding-right: 15px;
+        padding-bottom: 40px;
+        
 
     }
 
@@ -718,6 +752,11 @@ footer ul {
 
     .container-populaires .card {
         margin-top: 10px;
+    }
+
+    #afficher {
+        margin-top: 5px;
+        font-size: 15px ;
     }
 
 
