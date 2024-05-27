@@ -457,7 +457,8 @@ footer ul {
     /* en-tête */
 
     #Logo-Booki {
-        width: 10%;
+        width: 65px;
+        height: 20px;
     }
 
     .nav-menu-link a:hover {
@@ -476,10 +477,25 @@ footer ul {
     /* filtres */
     .filters {
         display: flex;
+        flex-direction: column;
+        
     }
 
     .filters-title {
-        align-self: center;
+        padding-left: 5px;
+        margin-bottom: 10px;
+        font-size: 13px;
+        align-self: auto;
+    }
+
+    .filter {
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    .filter span {
+        font-size: 13px;
     }
 
 
@@ -612,11 +628,11 @@ footer ul {
     }
 
     .info-bar {
-        padding-left: 18px;
+        padding-left: 10px;
     }
 
     .fa-info {
-        padding-left: 5px;
+        padding-left: 2px;
     }
 
     
@@ -642,6 +658,10 @@ footer ul {
         width: 50px;
     }
 
+    .search-bar .search-input {
+        width: 100%;
+    }
+
     
 
 
@@ -652,8 +672,7 @@ footer ul {
     }
 
     .filters-title {
-        align-self: auto;
-        padding-left: 15px;
+        align-self: auto;        
     }
 
     .container-filters {
@@ -671,6 +690,7 @@ footer ul {
         width: 33%;
         margin-right: 1%;
         padding: 10px;
+        padding-left: 15px;
         flex-grow: 1;
 
     }
