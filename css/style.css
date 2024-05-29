@@ -292,6 +292,7 @@ nav a {
 
 .card-hebergements img {
     height: 124px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
