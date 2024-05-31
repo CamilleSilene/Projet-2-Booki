@@ -62,12 +62,12 @@ nav a {
 .nav-menu-link a {
     border-bottom: none;
     border-top: solid;
-    border-top-color: transparent;    
+    border-top-color: transparent;
 }
 
-.nav-menu-link a:hover {   
+.nav-menu-link a:hover {
     border-top-color: blue;
-    color: #0065FC;   
+    color: #0065FC;
 }
 
 
