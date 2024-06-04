@@ -422,7 +422,7 @@ nav a {
     padding-right: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     box-sizing: border-box;
 }
 
@@ -567,7 +567,7 @@ footer ul {
     }
 
     .card-activities .card-content {
-        height: 70px;
+        height: 70px;        
     }
 
 
